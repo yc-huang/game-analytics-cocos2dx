@@ -144,6 +144,8 @@ void AccountLayer::eventMenuCallback(CCObject* pSender) {
     char buf[64];
     int i = pMenuItem->getTag();
     
+    CCLog("DeviceId:%s", TDCCTalkingDataGA::getDeviceId());
+
     sprintf(buf, s_EventMenuItem[i].id.c_str(), ++_indexes[i]);
     CCLabelTTF* label = (CCLabelTTF*)pMenuItem->getLabel();
     label->setString(buf);
