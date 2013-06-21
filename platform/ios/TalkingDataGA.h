@@ -73,6 +73,11 @@ typedef enum {
  */
 + (void)setLogOn;
 
+/**
+ *  @method setSdkType 设置SDK类型  区分开发框架使用，开发者请勿调用
+ */
++ (void)setSdkType:(int)type;
+
 @end
 
 
